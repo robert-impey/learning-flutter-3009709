@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ChatApp());
+  runApp(const ChatApp());
 }
 
 class ChatApp extends StatelessWidget {
+  const ChatApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
       title: "Chat App",
       theme: ThemeData(primarySwatch: Colors.yellow),
-      home: LoginPage(),
+      home: const LoginPage(),
     );
   }
 }
@@ -25,14 +27,14 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      drawer: Drawer(),
+      drawer: const Drawer(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           print('Button clicked');
         },
       ),
       //TODO: Add the text and image from the design
-      body: Text('Hello!'),
+      body: const Text('Hello!'),
     );
   }
 }
