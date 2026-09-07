@@ -5,6 +5,7 @@ class ChatPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Hi Robert!'),
         actions: [
           IconButton(onPressed: () {
             print('Logout Icon Pressed');
