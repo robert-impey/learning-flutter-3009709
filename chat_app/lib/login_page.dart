@@ -34,21 +34,23 @@ class LoginPage extends StatelessWidget {
             Image.network(
               'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
               height: 200,
+              webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
             ),
             Container(
               height: 150,
               width: 150,
-              // child: FlutterLogo(),
               padding: const EdgeInsets.all(10),
               margin: const EdgeInsets.all(50),
               decoration: BoxDecoration(
-                  image: const DecorationImage(
-                    fit: BoxFit.fitHeight,
-                    image: NetworkImage(
-                        'https://3009709.youcanlearnit.net/Alien_LIL_131338.png'),
-                  ),
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(24)),
+                  color: Colors.blue, borderRadius: BorderRadius.circular(24)),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(24),
+                child: Image.network(
+                  'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                  fit: BoxFit.fitHeight,
+                  webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
+                ),
+              ),
             )
           ],
         ),
