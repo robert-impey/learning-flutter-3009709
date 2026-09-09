@@ -6,13 +6,25 @@ class ChatPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Hi Robert!'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         actions: [
-          IconButton(onPressed: () {
-            print('Logout Icon Pressed');
-          }, icon: Icon(Icons.logout))
+          IconButton(
+              onPressed: () {
+                print('Logout Icon Pressed');
+              },
+              icon: Icon(Icons.logout))
         ],
       ),
-      body: Container(),
+      body: Container(
+          margin: EdgeInsets.all(50),
+          decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(12),
+                  topRight: Radius.circular(12),
+                  bottomLeft: Radius.circular(12))),
+          child: Text('Hi, this is your message')),
     );
   }
 }
