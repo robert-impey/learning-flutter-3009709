@@ -32,7 +32,10 @@ class ChatPage extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Text('Hi, this is your message', style: TextStyle(fontSize: 20, color: Colors.white),),
+                      Text(
+                        'Hi, this is your message',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                       Image.network(
                         'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                         height: 200,
@@ -56,7 +59,10 @@ class ChatPage extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Text('Hi, this is your message', style: TextStyle(fontSize: 20, color: Colors.white),),
+                      Text(
+                        'Hi, this is your message',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                       Image.network(
                         'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                         height: 200,
@@ -80,7 +86,10 @@ class ChatPage extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Text('Hi, this is your message', style: TextStyle(fontSize: 20, color: Colors.white),),
+                      Text(
+                        'Hi, this is your message',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                       Image.network(
                         'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                         height: 200,
@@ -90,6 +99,26 @@ class ChatPage extends StatelessWidget {
                   ),
                 ],
               )),
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
+            child: Row(
+              children: [
+                IconButton(
+                    onPressed: () {
+                      print('Add Icon Pressed');
+                    },
+                    icon: Icon(Icons.add, color: Colors.white,)),
+                IconButton(
+                    onPressed: () {
+                      print('Send Icon Pressed');
+                    },
+                    icon: Icon(Icons.send, color: Colors.white,)),
+              ],
+            ),
+          )
         ],
       ),
     );
