@@ -16,15 +16,82 @@ class ChatPage extends StatelessWidget {
               icon: Icon(Icons.logout))
         ],
       ),
-      body: Container(
-          margin: EdgeInsets.all(50),
-          decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(12),
-                  topRight: Radius.circular(12),
-                  bottomLeft: Radius.circular(12))),
-          child: Text('Hi, this is your message')),
+      body: ListView(
+        children: [
+          Container(
+              margin: EdgeInsets.all(50),
+              decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12),
+                      bottomLeft: Radius.circular(12))),
+              padding: EdgeInsets.all(24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Column(
+                    children: [
+                      Text('Hi, this is your message', style: TextStyle(fontSize: 20, color: Colors.white),),
+                      Image.network(
+                        'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                        height: 200,
+                        webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
+                      )
+                    ],
+                  ),
+                ],
+              )),
+          Container(
+              margin: EdgeInsets.all(50),
+              decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12),
+                      bottomLeft: Radius.circular(12))),
+              padding: EdgeInsets.all(24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Column(
+                    children: [
+                      Text('Hi, this is your message', style: TextStyle(fontSize: 20, color: Colors.white),),
+                      Image.network(
+                        'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                        height: 200,
+                        webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
+                      )
+                    ],
+                  ),
+                ],
+              )),
+          Container(
+              margin: EdgeInsets.all(50),
+              decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(12),
+                      topRight: Radius.circular(12),
+                      bottomLeft: Radius.circular(12))),
+              padding: EdgeInsets.all(24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Column(
+                    children: [
+                      Text('Hi, this is your message', style: TextStyle(fontSize: 20, color: Colors.white),),
+                      Image.network(
+                        'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                        height: 200,
+                        webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
+                      )
+                    ],
+                  ),
+                ],
+              )),
+        ],
+      ),
     );
   }
 }
