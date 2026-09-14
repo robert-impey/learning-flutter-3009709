@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ChatPage extends StatelessWidget {
-  const ChatPage({Key? key}) : super(key: key);
+  const ChatPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +22,13 @@ class ChatPage extends StatelessWidget {
         children: [
           Container(
             padding: EdgeInsets.all(24),
+            margin: EdgeInsets.all(50),
+            decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(12),
+                    topRight: Radius.circular(12),
+                    bottomLeft: Radius.circular(12))),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -35,16 +42,16 @@ class ChatPage extends StatelessWidget {
                 )
               ],
             ),
-            margin: EdgeInsets.all(50),
-            decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(12),
-                    topRight: Radius.circular(12),
-                    bottomLeft: Radius.circular(12))),
           ),
           Container(
             padding: EdgeInsets.all(24),
+            margin: EdgeInsets.all(50),
+            decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(12),
+                    topRight: Radius.circular(12),
+                    bottomLeft: Radius.circular(12))),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -58,16 +65,16 @@ class ChatPage extends StatelessWidget {
                 )
               ],
             ),
-            margin: EdgeInsets.all(50),
-            decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(12),
-                    topRight: Radius.circular(12),
-                    bottomLeft: Radius.circular(12))),
           ),
           Container(
             padding: EdgeInsets.all(24),
+            margin: EdgeInsets.all(50),
+            decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(12),
+                    topRight: Radius.circular(12),
+                    bottomLeft: Radius.circular(12))),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -81,17 +88,13 @@ class ChatPage extends StatelessWidget {
                 )
               ],
             ),
-            margin: EdgeInsets.all(50),
-            decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(12),
-                    topRight: Radius.circular(12),
-                    bottomLeft: Radius.circular(12))),
           ),
           //TODO: Align both icons to the cornermost edge of the device width.
           Container(
             height: 100,
+            decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
             child: Row(
               children: [
                 IconButton(
@@ -110,9 +113,6 @@ class ChatPage extends StatelessWidget {
                 ),
               ],
             ),
-            decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
           )
         ],
       ),
