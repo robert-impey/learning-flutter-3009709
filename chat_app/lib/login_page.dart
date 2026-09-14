@@ -6,17 +6,10 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      drawer: Drawer(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print('Button clicked');
-        },
-      ),
       //TODO: Align Text and image to the vertical & horizontal centre of the device.
       body: Column(
         children: [
-          Text(
+          const Text(
             'Let\'s sign you in!',
             style: TextStyle(
                 fontSize: 30,
@@ -26,7 +19,7 @@ class LoginPage extends StatelessWidget {
           ),
 
           //TODO: Align text to centre
-          Text(
+          const Text(
             'Welcome back! \n You\'ve been missed!',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -34,9 +27,9 @@ class LoginPage extends StatelessWidget {
                 color: Colors.blueGrey),
           ),
           Image.network(
-            'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
-            height: 200,
-          ),
+              'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+              height: 200,
+              webHtmlElementStrategy: WebHtmlElementStrategy.prefer),
           Container(
             height: 150,
             width: 150,
@@ -44,10 +37,11 @@ class LoginPage extends StatelessWidget {
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.all(50),
             decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                   fit: BoxFit.fitHeight,
                   image: NetworkImage(
-                      'https://3009709.youcanlearnit.net/Alien_LIL_131338.png'),
+                      'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                      webHtmlElementStrategy: WebHtmlElementStrategy.prefer),
                 ),
                 color: Colors.blue,
                 borderRadius: BorderRadius.circular(24)),
