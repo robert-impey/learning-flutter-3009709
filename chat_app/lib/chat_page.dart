@@ -39,6 +39,7 @@ class ChatPage extends StatelessWidget {
                 Image.network(
                   'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                   height: 200,
+                  webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
                 )
               ],
             ),
@@ -62,6 +63,7 @@ class ChatPage extends StatelessWidget {
                 Image.network(
                   'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                   height: 200,
+                  webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
                 )
               ],
             ),
@@ -85,6 +87,7 @@ class ChatPage extends StatelessWidget {
                 Image.network(
                   'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
                   height: 200,
+                  webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
                 )
               ],
             ),
