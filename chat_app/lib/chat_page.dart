@@ -31,6 +31,7 @@ class ChatPage extends StatelessWidget {
                     bottomLeft: Radius.circular(12))),
             child: Column(
               mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'Hi, this is your message!',
