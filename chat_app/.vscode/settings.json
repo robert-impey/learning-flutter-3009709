@@ -1,4 +1,16 @@
 {
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "chat.tools.terminal.autoApprove": {
+        "java": true,
+        "flutter": true,
+        "/^cd \"c:/Users/rober/code/learning-flutter-3009709/chat_app\"; \\.\\\\android\\\\gradlew -v; Write-Host \"---\"; \\.\\\\android\\\\gradlew :app:assembleDebug --stacktrace$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^cd \"c:/Users/rober/code/learning-flutter-3009709/chat_app/android\"; \\.\\\\gradlew -v; Write-Host \"---\"; \\.\\\\gradlew :app:assembleDebug --stacktrace$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }
