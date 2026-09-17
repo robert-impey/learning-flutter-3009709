@@ -100,6 +100,7 @@ class ChatPage extends StatelessWidget {
                 color: Colors.black,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
                   onPressed: () {},
