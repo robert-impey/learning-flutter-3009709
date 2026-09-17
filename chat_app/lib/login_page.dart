@@ -18,10 +18,9 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 0.5),
             ),
-  
-            //TODO: Align text to centre
             const Text(
               'Welcome back! \n You\'ve been missed!',
+              textAlign: TextAlign.center,
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
