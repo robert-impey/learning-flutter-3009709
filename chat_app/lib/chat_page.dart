@@ -30,12 +30,12 @@ class ChatPage extends StatelessWidget {
                     topRight: Radius.circular(12),
                     bottomLeft: Radius.circular(12))),
             child: Column(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisSize: MainAxisSize.max,
               children: [
                 Text(
                   'Hi, this is your message!',
                   style: TextStyle(fontSize: 20, color: Colors.white),
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.right,
                 ),
                 Image.network(
                   'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
