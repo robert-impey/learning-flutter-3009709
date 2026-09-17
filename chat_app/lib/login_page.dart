@@ -33,20 +33,29 @@ class LoginPage extends StatelessWidget {
             Container(
               height: 150,
               width: 150,
-              // child: FlutterLogo(),
-              padding: const EdgeInsets.all(10),
               margin: const EdgeInsets.all(50),
               decoration: BoxDecoration(
-                  image: const DecorationImage(
-                    fit: BoxFit.fitHeight,
-                    image: NetworkImage(
-                        'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
-                        webHtmlElementStrategy: WebHtmlElementStrategy.prefer),
-                  ),
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(24)),
-              child: const Center(
-                child: Text('Logo'),
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(24),
+                      child: Image.network(
+                        'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
+                        fit: BoxFit.fitHeight,
+                        webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
+                      ),
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Center(
+                      child: Text('Logo'),
+                    ),
+                  ),
+                ],
               ),
             )
           ],
