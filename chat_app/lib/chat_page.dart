@@ -35,6 +35,7 @@ class ChatPage extends StatelessWidget {
                 Text(
                   'Hi, this is your message!',
                   style: TextStyle(fontSize: 20, color: Colors.white),
+                  textAlign: TextAlign.center,
                 ),
                 Image.network(
                   'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
