@@ -9,13 +9,13 @@ class ChatPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text('Hi Pooja!'),
+        title: const Text('Hi Pooja!'),
         actions: [
           IconButton(
               onPressed: () {
                 print('Icon pressed!');
               },
-              icon: Icon(Icons.logout))
+              icon: const Icon(Icons.logout))
         ],
       ),
       body: ListView(
@@ -25,11 +25,11 @@ class ChatPage extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Container(
-              padding: EdgeInsets.all(24),
+              padding: const EdgeInsets.all(24),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
+                  const Text(
                     'Hi, this is your message!',
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
@@ -39,8 +39,8 @@ class ChatPage extends StatelessWidget {
                   )
                 ],
               ),
-              margin: EdgeInsets.all(50),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.all(50),
+              decoration: const BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(12),
@@ -51,11 +51,11 @@ class ChatPage extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: Container(
-              padding: EdgeInsets.all(24),
+              padding: const EdgeInsets.all(24),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
+                  const Text(
                     'Hi, this is your message!',
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
@@ -65,8 +65,8 @@ class ChatPage extends StatelessWidget {
                   )
                 ],
               ),
-              margin: EdgeInsets.all(50),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.all(50),
+              decoration: const BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(12),
@@ -77,11 +77,11 @@ class ChatPage extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: Container(
-              padding: EdgeInsets.all(24),
+              padding: const EdgeInsets.all(24),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
+                  const Text(
                     'Hi, this is your message!',
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
@@ -91,8 +91,8 @@ class ChatPage extends StatelessWidget {
                   )
                 ],
               ),
-              margin: EdgeInsets.all(50),
-              decoration: BoxDecoration(
+              margin: const EdgeInsets.all(50),
+              decoration: const BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(12),
@@ -109,21 +109,21 @@ class ChatPage extends StatelessWidget {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.add,
                     color: Colors.white,
                   ),
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.send,
                     color: Colors.white,
                   ),
                 ),
               ],
             ),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: Colors.black,
                 borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
           )
