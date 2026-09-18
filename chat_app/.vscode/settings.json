@@ -1,0 +1,10 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "flutter": true,
+        "ForEach-Object": true,
+        ".\\gradlew.bat": true,
+        "java": true
+    },
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic"
+}
