@@ -20,7 +20,7 @@ class ChatPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Flexible(
+          Expanded(
             child: ListView(
               children: [
                 //TODO: Remove duplicated code
