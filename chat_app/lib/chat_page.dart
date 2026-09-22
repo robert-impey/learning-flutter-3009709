@@ -29,6 +29,13 @@ class ChatPage extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Container(
                     padding: EdgeInsets.all(24),
+                    margin: EdgeInsets.all(50),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                            bottomLeft: Radius.circular(12))),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -43,19 +50,19 @@ class ChatPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    margin: EdgeInsets.all(50),
-                    decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(12),
-                            topRight: Radius.circular(12),
-                            bottomLeft: Radius.circular(12))),
                   ),
                 ),
                 Align(
                   alignment: Alignment.centerRight,
                   child: Container(
                     padding: EdgeInsets.all(24),
+                    margin: EdgeInsets.all(50),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                            bottomLeft: Radius.circular(12))),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -70,19 +77,19 @@ class ChatPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    margin: EdgeInsets.all(50),
-                    decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(12),
-                            topRight: Radius.circular(12),
-                            bottomLeft: Radius.circular(12))),
                   ),
                 ),
                 Align(
                   alignment: Alignment.centerRight,
                   child: Container(
                     padding: EdgeInsets.all(24),
+                    margin: EdgeInsets.all(50),
+                    decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(12),
+                            topRight: Radius.circular(12),
+                            bottomLeft: Radius.circular(12))),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -97,13 +104,6 @@ class ChatPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    margin: EdgeInsets.all(50),
-                    decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(12),
-                            topRight: Radius.circular(12),
-                            bottomLeft: Radius.circular(12))),
                   ),
                 ),
               ],
@@ -111,6 +111,9 @@ class ChatPage extends StatelessWidget {
           ),
           Container(
             height: 100,
+            decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -130,9 +133,6 @@ class ChatPage extends StatelessWidget {
                 ),
               ],
             ),
-            decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
           )
         ],
       ),
