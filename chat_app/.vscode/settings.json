@@ -7,5 +7,6 @@
         "&": true,
         "code": true
     },
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.jdt.ls.java.home": "C:\\Program Files\\Android\\openjdk\\jdk-21.0.8"
 }
