@@ -19,7 +19,6 @@ class LoginPage extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   letterSpacing: 0.5),
             ),
-
             Text(
               'Welcome back! \n You\'ve been missed!',
               textAlign: TextAlign.center,
@@ -31,6 +30,7 @@ class LoginPage extends StatelessWidget {
             Image.network(
               'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
               height: 200,
+              webHtmlElementStrategy: WebHtmlElementStrategy.prefer,
             ),
           ],
         ),
