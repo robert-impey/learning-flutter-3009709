@@ -11,13 +11,13 @@ class ChatPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: Text('Hi Pooja!'),
+        title: const Text('Hi Pooja!'),
         actions: [
           IconButton(
               onPressed: () {
                 print('Icon pressed!');
               },
-              icon: Icon(Icons.logout))
+              icon: const Icon(Icons.logout))
         ],
       ),
       body: Column(
@@ -33,7 +33,7 @@ class ChatPage extends StatelessWidget {
                             : Alignment.centerRight,
                         message: "Hello, this is Pooja!");
                   })),
-          ChatInput(),
+          const ChatInput(),
         ],
       ),
     );

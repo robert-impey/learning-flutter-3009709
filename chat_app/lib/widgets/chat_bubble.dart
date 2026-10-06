@@ -12,13 +12,13 @@ class ChatBubble extends StatelessWidget {
     return Align(
       alignment: alignment,
       child: Container(
-        padding: EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              '$message',
-              style: TextStyle(fontSize: 20, color: Colors.white),
+              message,
+              style: const TextStyle(fontSize: 20, color: Colors.white),
             ),
             Image.network(
               'https://3009709.youcanlearnit.net/Alien_LIL_131338.png',
@@ -26,8 +26,8 @@ class ChatBubble extends StatelessWidget {
             )
           ],
         ),
-        margin: EdgeInsets.all(50),
-        decoration: BoxDecoration(
+        margin: const EdgeInsets.all(50),
+        decoration: const BoxDecoration(
             color: Colors.grey,
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(12),

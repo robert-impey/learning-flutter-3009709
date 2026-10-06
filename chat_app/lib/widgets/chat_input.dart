@@ -12,21 +12,21 @@ class ChatInput extends StatelessWidget {
         children: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.add,
               color: Colors.white,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.send,
               color: Colors.white,
             ),
           ),
         ],
       ),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           color: Colors.black,
           borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
     );
