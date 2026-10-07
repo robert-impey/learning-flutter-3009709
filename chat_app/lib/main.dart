@@ -1,4 +1,3 @@
-import 'package:chat_app/chat_page.dart';
 import 'package:chat_app/demo/counter_stateful_demo.dart';
 import 'package:flutter/material.dart';
 
